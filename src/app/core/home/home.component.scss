@@ -1,0 +1,46 @@
+:host {
+    height: 100%;
+}
+
+.home-container {
+    .image-section {
+        .image-cover {
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .container-section {
+        width: 100%;
+        margin: 5px 5% 0px 5%;
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 1) 39%,
+            rgba(83, 197, 255, 0.9728935519520308) 100%,
+            rgba(127, 222, 255, 0.6895133053221288) 100%
+        );
+
+        .apple-box {
+            height: 30%;
+            background-image: url("../../../assets/images/logo.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            p{
+                position: relative;
+                font-weight: 900;
+                top: 60%;
+            }
+        }
+
+        p {
+            color: var(--primary);
+        }
+    }
+}
+
+ng9-odometer {
+    font-size: 48px;
+}
+

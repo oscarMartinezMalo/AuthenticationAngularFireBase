@@ -1,0 +1,111 @@
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+// @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+// * {
+// font-family: 'Poppins', sans-serif !important;
+// }
+
+:root {
+  --primary: #000000;
+  --primary-light: #63caff;
+  --accent-light: #e9e9e9;
+  --accent: #000000;
+  --warm: #9b4b4b;
+}
+
+.ng-trigger.ng-trigger-routeAnimations {
+  height: 100%;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+// Router outlet heigt 100%
+.ng-tns-c0-0.ng-trigger.ng-trigger-routeAnimations {
+  height: -webkit-fill-available;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  height: -webkit-fill-available;
+}
+
+mat-card {
+  &.custom-card {
+    max-width: 800px;
+  }
+  .mat-card-actions {
+    margin: 0px !important;
+  }
+
+  & h1 {
+    color: var(--primary);
+  }
+}
+
+router-outlet.ng-tns-c286-0 {
+  height: 100%;
+}
+
+mat-card-title.mat-card-title {
+  color: var(--primary);
+}
+
+mat-sidenav-container.mat-drawer-container.mat-sidenav-container.sidenav-container {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 39%,
+    rgba(83, 197, 255, 0.9728935519520308) 100%,
+    rgba(127, 222, 255, 0.6895133053221288) 100%
+  );
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-light);
+}
+
+.mat-flat-button {
+  border-radius: 0px !important;
+}
+
+p.outside-message {
+  position: absolute;
+  top: 100%;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.odometer-formatting-mark {
+  display: none !important;
+}
+
+.odometer.odometer-theme-default .odometer-digit {
+  margin: 5px;
+}

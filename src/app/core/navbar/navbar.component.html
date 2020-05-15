@@ -1,0 +1,47 @@
+<mat-toolbar class="container" color="primary" *ngIf="(authService.user$ | async)">
+    <div fxLayout="row" fxLayoutAlign="end center" fxFlex="50%">
+        <img src="../../../assets/images/logo.svg" class="logo" [routerLink]="(authService.user$ | async) ? ['team-list'] : ['/home']" routerLinkActive="router-link-active"  *ngIf="!(authService.user$ | async) || (!(isHandset$ | async) && (authService.user$ | async) )  ">
+        <span class="spacer" *ngIf="isHandset$ | async"></span>
+    </div>
+    
+
+    <div fxLayout="row" fxLayoutAlign="end center" fxFlex="50%">
+        <!-- <div *ngIf='!(authService.user$ | async)' fxLayoutGap="8px">
+            <button routerLinkActive="active" routerLink="/signin" (click)="drawerClose()" #rla="routerLinkActive"
+                [ngClass]="rla.isActive ?  'mat-stroked-button mat-button-base' : 'mat-button'">
+                Sign In
+            </button>            
+
+            <button routerLinkActive="active" routerLink="/signup" (click)="drawerClose()" #rlac="routerLinkActive"
+                [ngClass]="rlac.isActive ?  'mat-stroked-button mat-button-base' : 'mat-button' ">
+                Sign Up
+            </button>
+        </div> -->
+
+        <div *ngIf='(authService.user$ | async) as user'>
+            <button mat-button class="example-icon" [matMenuTriggerFor]="menu">
+                <mat-icon class="material-icons md-dark" style="margin-right: 5px;">account_circle</mat-icon>
+                <span class="user" *ngIf='!(isHandset$ | async)'>{{user.name}}</span>
+            </button>
+
+            <mat-menu #menu="matMenu">
+                <button type="button" routerLinkActive="active" mat-menu-item *ngIf='(isHandset$ | async)'
+                    fxLayoutAlign="center center">
+                    <span>{{user.name}}</span>
+                </button>
+
+                <button type="button" routerLinkActive="active" mat-menu-item (click)="onLogout()">
+                    <mat-icon class="material-icons md-dark ">power_settings_new</mat-icon>
+                    <span>Logout</span>
+                </button>
+            </mat-menu>
+        </div>
+
+    </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav-content>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>
