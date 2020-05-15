@@ -16,8 +16,8 @@
         background: linear-gradient(
             0deg,
             rgba(255, 255, 255, 1) 39%,
-            rgba(83, 197, 255, 0.9728935519520308) 100%,
-            rgba(127, 222, 255, 0.6895133053221288) 100%
+            rgba(37, 37, 37, 0.973) 100%,
+            rgba(122, 122, 122, 0.69) 100%
         );
 
         .apple-box {
@@ -31,6 +31,7 @@
                 position: relative;
                 font-weight: 900;
                 top: 60%;
+                color: gray;
             }
         }
 
@@ -42,5 +43,6 @@
 
 ng9-odometer {
     font-size: 48px;
+    color: gray;
 }
 

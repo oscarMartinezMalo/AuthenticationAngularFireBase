@@ -31,19 +31,11 @@ mat-toolbar.mat-toolbar {
         padding: 0px;
     }
 
-    .mat-expansion-panel-header-title {
-        // color: var(--primary-light);
-    }
-
     .mat-expansion-panel-header:not([aria-disabled="true"]) {
         // background-color: var(--primary);
         border-radius: 0px;
         // padding: 0px 16px;
     }
-}
-
-.mat-expansion-indicator::after {
-    // color: var(--primary-light) !important;
 }
 
 .sidenav {
@@ -65,9 +57,6 @@ mat-toolbar.mat-toolbar {
     height: 36px;
 }
 
-.mat-drawer-inner-container .mat-nav-list .mat-list-item-content:hover {
-    // background-color: var(--primary-soft);
-}
 
 button.ng-star-inserted.mat-stroked-button {
     // background: var(--primary);
@@ -80,7 +69,7 @@ button.ng-star-inserted.mat-stroked-button {
 }
 
 .logo {
-    width: 25px;
+    width: 105px;
     outline: none;
 }
 
