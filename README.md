@@ -1,6 +1,21 @@
 # Authentication
-
+Go to enviroments folder (src/app/enviroments) and change your firebase connection
+Ex.
+export const environment = {
+  production: true,
+  firebase: {
+    apiKey: 'AIzaSyBKio1bKasdn2aD77AbPiT5KgdyRw-wg',
+    authDomain: 'test-asd10.firebaseapp.com',
+    databaseURL: 'https://test-7asd.firebaseio.com',
+    projectId: 'test-77asd10',
+    storageBucket: 'test-77asd0.appspot.com',
+    messagingSenderId: '9012asd3280',
+    appId: '1:901275313280:web:ec6c9fe2688asdf5f265',
+    measurementId: 'G-09Fasd261'
+  }
+};
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
+
 
 ## Development server
 
